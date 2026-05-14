@@ -26,10 +26,3 @@ export const WalkthroughSchema = z.object({
   createdAt: z.number().int().positive(),
   updatedAt: z.number().int().positive(),
 })
-
-export const PlayProgressSchema = z.object({
-  walkthroughId: z.string().uuid(),
-  stepIndex: z.number().int().min(0),
-  tabId: z.number().int(),
-  savedAt: z.number().int().positive(),
-})
